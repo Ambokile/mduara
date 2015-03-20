@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mduara</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="user_name">USER NAME</string>
+    <string name="info">Mduara provide you the means to get Real time information through media,
+         provide user name and phone number to finish .......</string>
+    <string name="contact_head">Contacts :</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="conc">Finish Installation</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="title_activity_image_viewer">ImageViewerActivity</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+
+</resources>

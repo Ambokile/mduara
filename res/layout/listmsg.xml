@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:id = "@+id/outerOne"
+>
+
+					    <RelativeLayout
+					        android:id="@+id/parent"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content" 
+					        
+					         > 
+					         
+					             
+					              <TextView
+					        android:id="@+id/textView1"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					      
+					        android:paddingTop="5dp"
+					        android:paddingLeft="5dp"
+					        android:paddingRight="5dp"
+					        android:paddingBottom="0dp"
+					        android:background="#00C0C0C0"
+					        android:maxWidth="250dip"
+					        android:minWidth="85dip"
+					       />
+					        
+					        <TextView
+					        android:id="@+id/textView2"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignRight="@id/textView1"
+					        android:textSize="10sp"
+					        android:layout_below="@id/textView1"
+					        android:paddingTop="0dp"
+					        android:background="#00C0C0C0"
+					        android:singleLine="true"
+					        />
+					        
+					         
+					   </RelativeLayout>
+
+							     <RelativeLayout
+							        android:id="@+id/parent_v"
+							         android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							         
+							        
+							         > 
+							         
+							   <ImageView
+							         android:id="@+id/imageVideo"
+							         android:layout_width="180dp"
+							         android:layout_height="180dp"
+							          android:scaleType="fitXY"
+							          />
+							   
+							    <TextView
+							        android:id="@+id/textViewVideo"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_alignRight="@id/imageVideo"
+							        android:textSize="10sp"
+							        android:layout_below="@id/imageVideo"
+							        android:paddingTop="0dp"
+							        android:background="#00000000"
+							        android:singleLine="true"
+							        
+							        />
+							    </RelativeLayout>
+
+									     <RelativeLayout
+									        android:id="@+id/parent_i"
+									         android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									         
+									         > 
+									         
+									   <ImageView
+									         android:id="@+id/imageImage"
+									         android:layout_width="180dp"
+									         android:layout_height="180dp"
+									          android:scaleType="fitXY"
+									          />
+									   <TextView
+									        android:id="@+id/textViewImage"
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:layout_alignRight="@id/imageImage"
+									        android:textSize="10sp"
+									        android:layout_below="@id/imageImage"
+									        android:paddingTop="0dp"
+									        android:background="#00000000"
+									        android:singleLine="true"
+									        
+									        />
+									   
+									    </RelativeLayout>
+									    
+									    
+ 
+      <LinearLayout
+           android:id="@+id/all_t"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:weightSum="2" 
+         android:orientation="vertical"
+         >
+         
+			          <RelativeLayout
+			          android:id="@+id/broadcast"
+			         android:layout_width="wrap_content"
+			        android:layout_height="0dp"
+			         android:layout_weight="2.0"
+			      >
+			      <RelativeLayout 
+			          android:id="@+id/head_text"
+			          android:layout_width="wrap_content"
+			          android:layout_height="wrap_content">
+			        <ImageView
+			         android:id="@+id/textBroadcast"
+			         android:layout_width="20dp"
+			         android:layout_height="20dp"
+			         android:layout_alignParentLeft="true"
+			         android:src="@drawable/dar"
+			          /> 
+			          <TextView 
+			              android:id="@+id/sender_name"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:layout_toRightOf="@id/textBroadcast"
+			              android:textSize="12sp"
+			              android:paddingLeft="5dp"
+			              android:textColor="#0000ff"
+			              android:textStyle="bold"/>
+			          
+			          <ImageView
+			         android:id="@+id/textalarm"
+			         android:layout_width="15dp"
+			         android:layout_height="15dp"
+			         android:layout_below="@id/sender_name"
+			         android:layout_toRightOf="@id/textBroadcast"
+			         android:src="@drawable/ic_action_add_alarm"
+			          /> 
+			           <TextView
+			              android:id="@+id/sender_textDescription"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:textSize="12sp"
+			              android:padding="1dp"
+			              android:layout_below="@id/sender_name"
+			              android:layout_toRightOf="@id/textalarm" 
+			              android:fontFamily="sans-serif-condensed"
+			              android:maxLines="2"
+			             
+			              />
+			           
+			           <TextView 
+			              android:id="@+id/sender_date"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:layout_below="@id/sender_textDescription"
+			              android:layout_alignParentRight="true"
+			              android:textSize="10sp"
+			              android:padding="5dp"
+			              android:fontFamily="sans-serif-light"
+			              />
+			           
+			          <TextView 
+			              android:id="@+id/sender_time"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:layout_below="@id/sender_textDescription"
+			              android:layout_toLeftOf="@id/sender_date"
+			              android:textSize="10sp"
+			              android:padding="5dp"
+			              android:fontFamily="sans-serif-light"
+			              />
+			          
+			          
+			        </RelativeLayout>
+			         <RelativeLayout 
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:layout_below="@id/head_text">
+			         <TextView 
+			              android:id="@+id/sender_msg"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:textSize="12sp"
+			              android:padding="5dp"
+			              
+			              />
+			     </RelativeLayout>
+    
+              </RelativeLayout>
+     
+			         
+     </LinearLayout>
+    
+      
+ 
+    
+      <LinearLayout
+           android:id="@+id/all_i"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:weightSum="2" 
+         android:orientation="vertical"
+         >
+         
+					          <RelativeLayout
+					          android:id="@+id/broadcast_i"
+					         android:layout_width="wrap_content"
+					        android:layout_height="0dp"
+					         android:layout_weight="2.0"
+					      >
+					        <ImageView
+					         android:id="@+id/imageBroadcast_i"
+					         android:layout_width="120dp"
+					         android:layout_height="120dp"
+					         android:layout_alignParentLeft="true"
+					          android:scaleType="fitXY"
+					          android:focusable="false"
+					          android:focusableInTouchMode="false"
+					          /> 
+					          <RelativeLayout 
+					              android:id="@+id/sender_name_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_toRightOf="@id/imageBroadcast_i"
+					              android:layout_marginLeft="10dp"
+					              >
+					               <ImageView
+					         android:id="@+id/imageBroadcast_sendername_i"
+					         android:layout_width="20dp"
+					         android:layout_height="20dp"
+					         android:layout_alignParentLeft="true"
+					         android:src="@drawable/dar"
+					          /> 
+					          
+					             
+					               <TextView 
+					              android:id="@+id/image_sender_i"
+					               android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:textSize="12sp"
+					              android:layout_toRightOf="@+id/imageBroadcast_sendername_i"
+					              android:layout_marginLeft="12dp"
+					              android:textColor="#0000ff"
+					              android:textStyle="bold"
+					               android:maxLines="2"/>
+					        <TextView
+					              android:id="@+id/imageBroadcast_sendernameDescription_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:textSize="12sp"
+					              android:padding="1dp"
+					              android:layout_below="@id/image_sender_i" 
+					              android:layout_toRightOf="@id/imageBroadcast_sendername_i"
+					             android:fontFamily="sans-serif-condensed"
+					             android:layout_marginTop="5dp"
+					              android:maxLines="2"/>
+					           
+					         
+					          
+					           <ImageView
+					         android:id="@+id/imagealarm_i"
+					         android:layout_width="15dp"
+					         android:layout_height="15dp"
+					          android:layout_toLeftOf="@id/image_sender_i"
+					          android:layout_below="@id/image_sender_i"
+					         android:src="@drawable/ic_action_new_picture"
+					         android:layout_marginTop="5dp"
+					      /> 
+					          
+					         <TextView 
+					              android:id="@+id/sender_customize_information_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_below="@id/imageBroadcast_sendernameDescription_i"
+					              android:textSize="12sp"
+					              android:paddingTop="5dp"
+					              android:paddingLeft="5dp"
+					              android:paddingRight="5dp"
+					              android:paddingBottom="1dp"
+					              android:fontFamily="sans-serif-condensed"
+					              android:maxLines="3"
+					              android:text="radio number moja in tanzania,tupo ulipo pamoja tunafanya jamii salama"
+					              
+					              />
+					         
+					          <ImageView
+					         android:id="@+id/imagegroup_i"
+					         android:layout_width="15dp"
+					         android:layout_height="15dp"
+					         android:layout_alignParentRight="true"
+					          android:layout_below="@id/sender_customize_information_i"
+					         android:src="@drawable/ic_action_group"
+					         android:layout_marginTop="1dp"
+					         android:layout_marginRight="10dp"
+					      />
+					          <ImageView
+					         android:id="@+id/imageaccept_i"
+					         android:layout_width="15dp"
+					         android:layout_height="15dp"
+					         android:layout_toLeftOf="@id/imagegroup_i"
+					          android:layout_below="@id/sender_customize_information_i"
+					         android:src="@drawable/ic_action_accept"
+					         android:layout_marginTop="1dp"
+					      />  
+					         
+					          </RelativeLayout>
+					          
+					           <TextView
+					        android:id="@+id/description_i"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:layout_below="@id/imageBroadcast_i"
+					        android:text="maelezo"
+					        android:textSize="10sp"
+					        android:layout_marginTop="15dp"
+					        android:paddingLeft="4dp"
+					        android:paddingRight="4dp"
+					         android:background="@drawable/border"
+					      />
+					           <TextView 
+					              android:id="@+id/sender_msg_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_alignParentLeft="true"
+					              android:layout_below="@id/description_i"
+					              android:textSize="12sp"
+					              android:padding="10dp"
+					              android:minHeight="2dp"
+					              />
+					           
+					         
+					          <TextView 
+					              android:id="@+id/sender_date_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_below="@id/sender_msg_i"
+					              android:layout_alignParentRight="true"
+					              android:textSize="10sp"
+					              android:padding="5dp"
+					              android:fontFamily="sans-serif-light"
+					              android:maxLines="1"
+					              />
+					          <TextView 
+					              android:id="@+id/sender_time_i"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_toLeftOf="@id/sender_date_i"
+					              android:layout_below="@id/sender_msg_i"
+					              android:textSize="10sp"
+					              android:padding="5dp"
+					              android:fontFamily="sans-serif-light"
+					               android:maxLines="1"
+					              />
+					         
+					            
+						          </RelativeLayout>
+          
+     </LinearLayout>
+    
+      
+      
+
+   
+    
+   
+      <LinearLayout
+           android:id="@+id/all_v"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2" 
+         android:orientation="vertical">
+         
+								          <RelativeLayout
+								          android:id="@+id/broadcast_v"
+								         android:layout_width="wrap_content"
+								        android:layout_height="0dp"
+								         android:layout_weight="2.0"
+								      >
+								        <ImageView
+								         android:id="@+id/imageBroadcast_v"
+								         android:layout_width="120dp"
+								         android:layout_height="120dp"
+								         android:layout_alignParentLeft="true"
+								          android:scaleType="fitXY"
+								          android:focusable="false"
+								           android:focusableInTouchMode="false"
+								          /> 
+								          <RelativeLayout 
+								              android:id="@+id/sender_name_v"
+								              android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:layout_toRightOf="@id/imageBroadcast_v"
+								             android:layout_marginLeft="10dp"
+								         >
+								               <ImageView
+								         android:id="@+id/videoBroadcast_sendername_v"
+								         android:layout_width="20dp"
+								         android:layout_height="20dp"
+								         android:layout_alignParentLeft="true"
+								         android:src="@drawable/dar"
+								          /> 
+								          <TextView
+								              android:id="@+id/videoBroadcast_sendernameDescription_v"
+								              android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:textSize="12sp"
+								              android:padding="1dp"
+								              android:layout_below="@id/videoBroadcast_sendername_v" 
+								              android:layout_marginLeft="18dp"
+								              android:fontFamily="sans-serif-condensed"
+								               android:maxLines="2"
+								              />
+								         
+								          <TextView 
+								              android:id="@+id/sender_name_v1"
+								               android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:textSize="12sp"
+								              android:layout_toRightOf="@+id/videoBroadcast_sendername_v"
+								              android:layout_above="@+id/videoBroadcast_sendernameDescription_v"
+								              android:layout_marginLeft="12dp"
+								              android:textColor="#0000ff"
+								              android:textStyle="bold"
+								               android:maxLines="2"/>
+								          
+								          
+								           <ImageView
+								         android:id="@+id/imagealarm_v"
+								         android:layout_width="15dp"
+								         android:layout_height="15dp"
+								          android:layout_toLeftOf="@id/sender_name_v1"
+								          android:layout_below="@id/sender_name_v1"
+								         android:src="@drawable/ic_action_video"
+								          /> 
+								          
+								             
+					         <TextView 
+					              android:id="@+id/sender_customize_information_v"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_below="@id/videoBroadcast_sendernameDescription_v"
+					              android:textSize="12sp"
+					              android:paddingTop="5dp"
+					              android:paddingLeft="5dp"
+					              android:paddingRight="5dp"
+					              android:paddingBottom="1dp"
+					              android:fontFamily="sans-serif-condensed"
+					              android:maxLines="3"
+					              android:text="radio number moja in tanzania,tupo ulipo pamoja tunafanya jamii salama"
+					              
+					              />
+					         
+					          <ImageView
+					         android:id="@+id/imagegroup_v"
+					         android:layout_width="15dp"
+					         android:layout_height="15dp"
+					         android:layout_alignParentRight="true"
+					          android:layout_below="@id/sender_customize_information_v"
+					         android:src="@drawable/ic_action_group"
+					         android:layout_marginTop="1dp"
+					         android:layout_marginRight="10dp"
+					      />
+					          <ImageView
+					         android:id="@+id/imageaccept_v"
+					         android:layout_width="15dp"
+					         android:layout_height="15dp"
+					         android:layout_toLeftOf="@id/imagegroup_v"
+					          android:layout_below="@id/sender_customize_information_v"
+					         android:src="@drawable/ic_action_accept"
+					         android:layout_marginTop="1dp"
+					      />  
+					         
+								         
+								          </RelativeLayout>
+								         
+								          <TextView
+					        android:id="@+id/description_v"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:layout_below="@id/imageBroadcast_v"
+					        android:text="maelezo"
+					        android:textSize="10sp"
+					        android:layout_marginTop="15dp"
+					        android:paddingLeft="4dp"
+					        android:paddingRight="4dp"
+					         android:background="@drawable/border"
+					      />
+								          
+								          <TextView 
+								              android:id="@+id/sender_msg_v"
+								              android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:layout_alignParentLeft="true"
+								              android:layout_below="@id/description_v"
+								              android:textSize="12sp"
+								              android:padding="2dp"
+								              android:minHeight="2dp"
+								              />
+								         <TextView 
+								              android:id="@+id/sender_date_v"
+								              android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:layout_below="@id/sender_msg_v"
+								              android:layout_alignParentRight="true"
+								              android:textSize="10sp"
+								              android:padding="5dp"
+								              android:fontFamily="sans-serif-light"
+								              android:maxLines="1"
+								              />
+								          <TextView 
+								              android:id="@+id/sender_time_v"
+								              android:layout_width="wrap_content"
+								              android:layout_height="wrap_content"
+								              android:layout_toLeftOf="@id/sender_date_v"
+								              android:layout_below="@id/sender_msg_v"
+								              android:textSize="10sp"
+								              android:padding="5dp"
+								              android:fontFamily="sans-serif-light"
+								               android:maxLines="1"
+								              />
+								    
+							          </RelativeLayout>
+          
+     </LinearLayout>
+    
+      
+      
+ 
+    
+</LinearLayout>

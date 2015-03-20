@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.getthat.VideoDisplayActivity$PlaceholderFragment"
+    android:background="#000000" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         android:layout_alignParentTop="true"
+        >
+       
+       <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+         />
+      
+
+       
+            <ImageView 
+           android:id="@+id/Image1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/>
+           
+        
+    </RelativeLayout>
+   
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:orientation="horizontal"
+        >
+       <LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+     
+     >
+
+    <Button
+        android:id="@+id/send"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Send"
+    android:background="#ffffff"
+    android:layout_weight="0.5"/>
+
+
+    <Button
+        android:id="@+id/cancel"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:background="#ffffff"
+    android:layout_marginLeft="5dp"
+    android:layout_weight="0.5"/>
+    
+  </LinearLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout 
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first"
+        android:layout_above="@id/second"
+        android:background="#00000000"
+        >
+
+          <EditText
+             android:id="@+id/media_msg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:ems="10"
+             android:textColor="#ffffffff"
+             android:inputType="textMultiLine" >
+
+             <requestFocus />
+         </EditText>
+        
+          
+        
+    </RelativeLayout>
+    
+     
+    
+</RelativeLayout>

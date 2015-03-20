@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ambovan.mduara.MainActivity"
+     >
+
+     
+     <item
+        android:id="@+id/comments"
+        android:icon="@drawable/ic_action_chat_w"
+        app:showAsAction="always"
+        android:visible="false"/>
+    
+    <item
+        android:id="@+id/group_add"
+        android:icon="@drawable/ic_action_add_group_w"
+        app:showAsAction="always"
+        android:visible="false"/>
+    
+    <item
+        android:id="@+id/remove"
+        android:icon="@drawable/ic_action_discard"
+        app:showAsAction="always"
+        android:visible="false"/>
+     
+    
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_action_share_w"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+    
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+   
+    
+    <item
+        android:id="@+id/forward"
+        android:icon="@drawable/ic_action_forward"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+   
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+</menu>
